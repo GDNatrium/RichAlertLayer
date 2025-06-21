@@ -36,15 +36,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up MSVC on Windows (optional fallback)
-        if: matrix.config.name == 'Windows'
-        uses: ilammy/msvc-dev-cmd@v1
+      - name: Update LLVM Windows
+        run: choco upgrade llvm
+        if: matrix.config.os == 'windows-latest'
 
-      - name: Build the mod
+      - name: Build
         uses: geode-sdk/build-geode-mod@main
         with:
+          export-pdb: true
           combine: true
           target: ${{ matrix.config.target }}
+          ccache-variant: ccache
+          build-config: ${{ matrix.config.build-type || 'Release' }}
 
   package:
     name: Package builds
