@@ -1,0 +1,30 @@
+{
+	"geode": "4.5.0",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "natrium.richalertlayer",
+	"name": "RichAlertLayer",
+	"version": "v1.0.0",
+	"developer": "Natrium",
+	"description": "codingtm",
+	"resources": {
+		"fonts": {
+			"boldChatFont": {
+				"path": "src/HelveticaNeueBold.otf",
+				"size": 53
+			},
+			"italicChatFont": {
+				"path": "src/HelveticaNeueItalic.ttf",
+				"size": 53
+			},
+			"boldItalicChatFont": {
+				"path": "src/HelveticaNeueBoldItalic.otf",
+				"size": 53
+			}
+		}
+	}
+}
