@@ -13,7 +13,7 @@
 	"description": "codingtm",
 	"dependencies": {
         "geode.node-ids": ">=v1.20.1"
-    	}
+    	},
 	"resources": {
 		"fonts": {
 			"boldChatFont": {
